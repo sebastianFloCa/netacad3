@@ -1,0 +1,179 @@
+<ion-header><!-- incio de cabecera-->
+  <ion-navbar color="azul"><!-- color-->
+    <ion-title>
+       <img alt="logo" height="40" src="../assets/img/logo.png" /><!-- logo-->
+                 CCNA 3<!-- titulo-->
+    </ion-title>
+  </ion-navbar>
+</ion-header><!--fin de cabecera -->
+
+<ion-content padding>
+
+    <h2 class="center">Netacad 3 | Escalamiento de redes</h2><!-- titulo-->
+<!-- inicio de contenido de tarjetas-->
+    <ion-card ><!-- inicio de tarjeta de presentación de capitulos-->
+        <img src="../assets/img/cap0.png" /><!--imagen de tarjeta y capitulo-->
+        <ion-card-content><!-- contenido de la tarjeta-->
+            <ion-card-title><!-- titulo-->
+                capítulo 0
+            </ion-card-title>
+            <p><!-- descripción-->
+                capítulo introductorio a el escalamiento de redes <br />
+                 <button ion-item (click)="onClick()"><!-- botón para ir a la lectura-->
+                  <ion-icon name="document" item-left></ion-icon> 
+                    Leer capítulo </button>
+            </p>
+        </ion-card-content><!-- fin de contenido de tarjeta-->
+    </ion-card><!-- fin de tarjeta-->
+<!-- Todas las demás tarjetas contienen los mismos componentes-->
+    <ion-card >
+        <img src="../assets/img/cap1.png" />
+        <ion-card-content>
+           <ion-card-title>
+            capítulo 1
+           </ion-card-title>
+             <p>
+                escalamiento de redes <br />
+                <button ion-item (click)="onClick()">
+                    <ion-icon name="document" item-left></ion-icon>
+                    Leer capítulo
+                 </button>
+             </p>
+         </ion-card-content>
+     </ion-card>
+        <ion-card >
+                <img src="../assets/img/cap2.png" />
+                <ion-card-content>
+                    <ion-card-title>
+                        capítulo 2
+                    </ion-card-title>
+                    <p>
+                        Redundancia LAN<br />
+                        <button ion-item (click)="onClick()">
+                            <ion-icon name="document" item-left></ion-icon>
+                            Leer capítulo
+                        </button>
+                    </p>
+                </ion-card-content>
+         </ion-card>
+         <ion-card >
+                <img src="../assets/img/cap3.png" />
+                <ion-card-content>
+                   <ion-card-title>
+                    capítulo 3
+                   </ion-card-title>
+                     <p>
+                        Agregación de enlaces <br />
+                        <button ion-item (click)="onClick()">
+                            <ion-icon name="document" item-left></ion-icon>
+                            Leer capítulo
+                         </button>
+                     </p>
+                 </ion-card-content>
+         </ion-card>
+         <ion-card >
+                <img src="../assets/img/cap4.png" />
+                <ion-card-content>
+                   <ion-card-title>
+                    capítulo 4
+                   </ion-card-title>
+                     <p>
+                        LAN inalambricas <br />
+                        <button ion-item (click)="onClick()">
+                            <ion-icon name="document" item-left></ion-icon>
+                            Leer capítulo
+                         </button>
+                     </p>
+                 </ion-card-content>
+        </ion-card>
+        <ion-card >
+                <img src="../assets/img/cap5.png" />
+                <ion-card-content>
+                   <ion-card-title>
+                    capítulo 5
+                   </ion-card-title>
+                     <p>
+                        Ajuste y resolucion de problemas de OSPF de área unica <br />
+                        <button ion-item (click)="onClick()">
+                            <ion-icon name="document" item-left></ion-icon>
+                            Leer capítulo
+                         </button>
+                     </p>
+                 </ion-card-content>
+        </ion-card>
+        <ion-card >
+                <img src="../assets/img/cap6.png" />
+                <ion-card-content>
+                   <ion-card-title>
+                    capítulo 6
+                   </ion-card-title>
+                     <p>
+                        OSPF multiárea <br />
+                        <button ion-item (click)="onClick()">
+                            <ion-icon name="document" item-left></ion-icon>
+                            Leer capítulo
+                         </button>
+                     </p>
+                 </ion-card-content>
+        </ion-card>
+        <ion-card >
+                <img src="../assets/img/cap7.png" />
+                <ion-card-content>
+                   <ion-card-title>
+                    capítulo 7
+                   </ion-card-title>
+                     <p>
+                        EIGRP<br />
+                        <button ion-item (click)="onClick()">
+                            <ion-icon name="document" item-left></ion-icon>
+                            Leer capítulo
+                         </button>
+                     </p>
+                 </ion-card-content>
+        </ion-card>
+        <ion-card >
+                <img src="../assets/img/cap8.png" />
+                <ion-card-content>
+                   <ion-card-title>
+                    capítulo 8
+                   </ion-card-title>
+                     <p>
+                        Conf. avanzada y resoluicion de problemas EIGRP <br />
+                        <button ion-item (click)="onClick()">
+                            <ion-icon name="document" item-left></ion-icon>
+                            Leer capítulo
+                         </button>
+                     </p>
+                 </ion-card-content>
+        </ion-card>
+        <ion-card >
+                <img src="../assets/img/cap9.png" />
+                <ion-card-content>
+                   <ion-card-title>
+                    capítulo 9
+                   </ion-card-title>
+                     <p>
+                        Imagenes y licencias de IOS <br />
+                        <button ion-item (click)="onClick()">
+                            <ion-icon name="document" item-left></ion-icon>
+                            Leer capítulo
+                         </button>
+                     </p>
+                 </ion-card-content>
+        </ion-card>
+<!-- fin de contenido de tarjetas para capitulos-->
+    <hr style="color: black;"/>
+<!-- inicio de creación de botón flotante con diseño espectacular-->
+    <ion-fab right bottom>
+        <button ion-fab color="danger"><ion-icon name="share"></ion-icon></button>
+        <ion-fab-list side="top"><!-- se indica hacia donde se despliegan los iconos-->
+            <!-- declaración de iconos-->
+          <button ion-fab color="secondary"onclick="window.open('http://www.gmail.com','_system','location=yes')"><ion-icon name="logo-google"></ion-icon></button>
+          <button ion-fab color="primary" onclick="window.open('http://www.facebook.com','_system','location=yes')"><ion-icon name="logo-facebook"></ion-icon></button>
+          <button ion-fab color="danger" onclick="window.open('http://www.googleplus.com','_system','location=yes')"><ion-icon name="logo-googleplus"></ion-icon></button>
+          <button ion-fab color="azul" onclick="window.open('http://www.twitter.com','_system','location=yes')"><ion-icon name="logo-twitter"></ion-icon></button>
+        </ion-fab-list>
+            <!-- fin declaración de iconos-->
+      </ion-fab>
+<!-- fin de creación de botón espectacular-->
+</ion-content><!-- fin de contenido-->

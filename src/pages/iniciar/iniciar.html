@@ -1,0 +1,27 @@
+<ion-header><!-- inicio de header-->
+    <ion-navbar color="azul"><!-- color-->
+      <ion-title><!-- titulo-->
+          <img alt="logo" height="40" src="../assets/img/logo.png" /><!--logo-->
+        Iniciar Sesion
+      </ion-title>
+    </ion-navbar>
+  </ion-header><!-- fin header-->
+
+  <ion-content padding><!-- contenido-->
+      <h2 class="center">Ingresa tu matricula</h2><!-- etiqueta-->
+    <ion-list>
+        <ion-item>
+            <ion-label color="primary">Matricula</ion-label><!-- etiqueta-->
+            <ion-input placeholder="fcqu15..."></ion-input><!-- entrada de texto-->
+        </ion-item>
+        <br>
+        <ion-item>
+                <ion-label>Eres Profesor?</ion-label><!-- etiqueta-->
+                <ion-toggle [(ngModel)]="isToggled" [(ngModel)]="pepperoni"(ionChange)="notify()"></ion-toggle><!-- opción de profesor-->
+        </ion-item>
+        
+
+        <button ion-button block clear strong (click)="funcion_iniciar()">Entrar</button><!-- botón de login-->
+    
+    </ion-list>
+</ion-content> <!-- fin de contenido-->

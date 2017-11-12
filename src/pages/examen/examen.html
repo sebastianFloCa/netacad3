@@ -1,0 +1,95 @@
+<ion-header><!-- inicio cabecera-->
+        <ion-navbar color="azul"><!-- color-->
+          <ion-title>
+              <img alt="logo" height="40" src="../assets/img/logo.png" /><!-- logo-->
+            Examen<!-- titulo-->
+          </ion-title>
+        </ion-navbar>
+      </ion-header><!-- fin cabecera-->
+      
+      <ion-content><!-- contenido-->
+         <h2 class="center">Netacad 3 | Evaluación</h2><!-- titulo-->
+         <!--inicio de contenido generado dinamicamente desde base de datos -->
+        <ion-card>  <!-- inicio de trajeta-->
+            <ion-card-content><!-- contenido de tarjeta-->
+                <ion-card-title><b>Pregunta 1</b></ion-card-title><!--no de pregunta -->
+                <p></p>
+                    <p><b>Cuantos Titulos tiene el Dr. Ruiz?</b></p><!-- pregunta-->
+                    <ion-list radio-group>
+                        <ion-list-header>
+                           <h4>Respuestas: </h4><!--poibles respuesta -->
+                        </ion-list-header>
+                        <ion-item>
+                          <ion-label>10 titulos</ion-label><!-- posible respuesta-->
+                          <ion-radio checked="true" value="10"></ion-radio>
+                        </ion-item>
+                      
+                        <ion-item>
+                          <ion-label>15 titulos</ion-label><!-- posible respuesta-->
+                          <ion-radio value="15"></ion-radio>
+                        </ion-item>
+                      
+                        <ion-item>
+                          <ion-label>5 titulos</ion-label><!-- posible respuesta-->
+                          <ion-radio value="5" ></ion-radio>
+                        </ion-item>
+                    </ion-list>
+           </ion-card-content>  <!-- fin  de contenido de tarjeta-->  
+        </ion-card><!-- fin de tarjeta-->
+
+        <ion-card>  
+                <ion-card-content>
+                    <ion-card-title><b>Pregunta 2</b></ion-card-title>
+                    <p></p>
+                        <p><b>porque shalom no ha trabajado?</b></p>
+                        <ion-list radio-group>
+                            <ion-list-header>
+                               <h4>Respuestas: </h4>
+                            </ion-list-header>
+                            <ion-item>
+                              <ion-label>Quiere reporbar estancia</ion-label>
+                              <ion-radio checked="true" value="reprobar"></ion-radio>
+                            </ion-item>
+                          
+                            <ion-item>
+                              <ion-label>Quiere que lo saquemos del equipo</ion-label>
+                              <ion-radio value="sacar"></ion-radio>
+                            </ion-item>
+                          
+                            <ion-item>
+                              <ion-label>prefiere la ed2</ion-label>
+                              <ion-radio value="ed2" ></ion-radio>
+                            </ion-item>
+                        </ion-list>
+               </ion-card-content>    
+         </ion-card>
+
+         <ion-card>  
+                <ion-card-content>
+                    <ion-card-title><b>Pregunta 3</b></ion-card-title>
+                    <p></p>
+                        <p><b>Será el cruz azul campeón?</b></p>
+                        <ion-list radio-group>
+                            <ion-list-header>
+                               <h4>Respuestas: </h4>
+                            </ion-list-header>
+                            <ion-item>
+                              <ion-label>Si</ion-label>
+                              <ion-radio checked="true" value="si"></ion-radio>
+                            </ion-item>
+                          
+                            <ion-item>
+                              <ion-label>super si</ion-label>
+                              <ion-radio value="ss"></ion-radio>
+                            </ion-item>
+                          
+                            <ion-item>
+                              <ion-label>obvio</ion-label>
+                              <ion-radio value="obvio" ></ion-radio>
+                            </ion-item>
+                        </ion-list>
+               </ion-card-content>    
+        </ion-card>
+        <!-- fin de contenido generado dinamicamente en BD-->
+        <button ion-button block><ion-icon item-left name="eject">Evaluar examen</ion-icon></button><!-- botón de evaluacion-->
+      </ion-content><!-- fin de contenido-->

@@ -1,0 +1,50 @@
+<ion-header><!-- header-->
+    <ion-navbar color="azul"><!-- color-->
+      <ion-title>
+          <img alt="logo" height="40" src="../assets/img/logo.png" /><!-- logo-->
+        Registro<!-- titulo-->
+      </ion-title>
+    </ion-navbar>
+  </ion-header><!-- fin de header-->
+
+  <ion-content><!-- contenido-->
+      <ion-list><!-- lista de elementos-->
+        <ion-item>
+            <ion-label>Eres profesor?                     Si</ion-label><!-- etiqueta-->
+            <ion-toggle [(ngModel)]="isToggled" [(ngModel)]="pepperoni"(ionChange)="notify()" ng-model="checked"></ion-toggle><!-- chequeo de profesores-->
+        </ion-item>
+        <ion-item>
+                <ion-label color="primary">Nombre</ion-label><br><!-- etiqueta-->
+                <ion-input placeholder="John" ></ion-input><!--entrada de texto -->
+        </ion-item>
+        <ion-item>
+                <ion-label color="primary">Apellido</ion-label><br><!-- etiqueta-->
+                <ion-input placeholder="Lopez" ></ion-input><!-- entrada-->
+        </ion-item>
+        <ion-item>
+                <ion-label color="primary" >Email</ion-label><!-- etiqueta-->
+                <ion-input type="email" placeholder="email@notreal.com" ></ion-input><!-- entrada-->
+              </ion-item>
+      </ion-list>
+        <ion-item>
+            <ion-label color="primary">Escuela</ion-label><br><!--etiqueta-->
+            <ion-input placeholder="Upemor"></ion-input><!--entrada-->
+        </ion-item>
+        <ion-item>
+                <ion-label color="primary">Identificador de profesor</ion-label><br><!-- etiqueta-->
+                <ion-input placeholder="1994" ></ion-input><!-- entrada-->
+        </ion-item>
+        <ion-item>
+                <ion-label color="primary">Matricula</ion-label><br><!--etiqueta-->
+                <ion-input placeholder="fcqu15..." disabled={{isInputDisabled}}></ion-input><!-- entrada y deshabilitar si se escribe-->
+        </ion-item>
+        <ion-item>
+                <ion-label color="primary">Grupo</ion-label><!-- etiqueta-->
+                <ion-input type="number" placeholder="1" disabled={{isInputDisabled}}></ion-input><!-- entrada y deshabilitar si se escribe-->
+        </ion-item>
+        
+        
+        
+        <button ion-button block clear strong (click)="funcion_registrar()">Registrar y Entrar</button><!-- botón de registro-->
+        
+  </ion-content><!-- fin de contenido-->

@@ -1,0 +1,52 @@
+﻿<ion-header><!-- inicio de cabecera-->
+        <ion-navbar color="azul"> <!-- color-->
+          <ion-title>
+              <img alt="logo" height="40" src="../assets/img/logo.png" /><!-- logo-->
+            Progreso<!-- titulo-->
+          </ion-title>
+        </ion-navbar>
+      </ion-header><!-- fin de cabecera-->
+      
+      <ion-content padding class="card-background-page"><!-- contenido-->
+          <h2 class="center">Progreso de alumnos</h2><!-- titulo-->
+          <ion-card>
+                <img src="../assets/img/progress.gif"/><!-- progreso-->
+            </ion-card>
+        
+          <button ion-button block color="danger" (click)="funcion1()" >Iniciar Sesión</button><!-- botón de incio de sesión-->
+          <br>
+          <button ion-button block clear strong (click)="funcion2()">Registrarse</button><!-- botón de registro-->
+
+          <ion-slides>
+              <ion-slide>
+                  <ion-card>
+                      <ion-card-header>
+                        Opcion 1
+                      </ion-card-header>
+                    
+                      <ion-list >
+                          <h3>Calificacion 1</h3>
+                          <h3>Calificacion 2</h3>
+                          <h3>Calificacion 3</h3>
+                          <h3>Calificacion 4</h3>
+                          <h3>Calificacion 5</h3>
+                      </ion-list>
+                  </ion-card>
+              </ion-slide>
+              <ion-slide>
+                <ion-card >
+                  <ion-card-header>
+                    Opcion 2
+                  </ion-card-header>
+                  <ion-list >
+                      <h3>%1</h3>
+                      <h3>%2</h3>
+                      <h3>%3</h3>
+                      <h3>%4</h3>
+                      <h3>%5</h3>
+                  </ion-list>
+                </ion-card>
+              </ion-slide>
+            </ion-slides>
+      </ion-content><!-- fin de contenido-->
+      
