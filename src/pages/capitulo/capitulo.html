@@ -17,12 +17,13 @@
     <p>
         Take a look at the <code>src/</code> directory to add or change tabs,
         update any existing page or create new pages.
+        {{capitulos|json}}
     </p>
-    <!--<ion-list >
-        <ion-item *ngFor="let item of lista "  >
-                <h2>Lectura... {{item.nombre}}</h2> <br>
-            <P>{{item.resumen}}</P>
+    <ion-list>
+        <ion-item *ngFor="let capitulo of capitulos">
+          <h2>{{ capitulo.nombre }}</h2>
+          <p>{{ capitulo.id}}</p>
         </ion-item>
-    </ion-list> -->
+     </ion-list>
 <!-- fin de contenido desde BD-->
 </ion-content><!-- fin de contenido-->
